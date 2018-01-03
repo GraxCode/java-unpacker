@@ -4,7 +4,7 @@ The ReverseCrypter can extract jar archives crypted by various java-crypters. Th
 ## Supported Crypters
 | Crypter | Extractor |
 | --- | --- |
-| CoreProject by ??? | CoreProtectEx |
+| CoreProtect by ??? | CoreProtectEx |
 | JCrypt 1.5 by redpois0n | JCryptEx |
 | JarProtector 1.1.1 by Burn3diC3 | JarProtectorEx |
 
@@ -20,4 +20,4 @@ The ReverseCrypter can extract jar archives crypted by various java-crypters. Th
 commons-io 2.6, commons-cli 1.4
 
 ## License
-ReverseCrypt is licensed under the GNU General Public License
+ReverseCrypt is licensed under the GNU General Public License 3.0
