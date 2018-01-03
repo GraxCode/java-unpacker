@@ -1,9 +1,7 @@
 package me.nov.reversecrypt.extractors;
 
-import java.io.ByteArrayOutputStream;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
-import java.util.jar.JarInputStream;
 
 import javax.crypto.Cipher;
 import javax.crypto.CipherInputStream;
@@ -28,7 +26,8 @@ public class JCryptEx extends Extractor {
 		this.path = jarInside;
 	}
 
-	@Override
+	@SuppressWarnings("unused")
+  @Override
 	public byte[] extract() {
 		JarEntry e = file.getJarEntry(path);
 		if (e == null) {

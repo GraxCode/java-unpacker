@@ -2,7 +2,6 @@ package me.nov.reversecrypt;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.nio.file.Files;
 import java.util.jar.JarFile;
 
@@ -12,12 +11,9 @@ import org.apache.commons.cli.DefaultParser;
 import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Options;
 
-import me.nov.reversecrypt.extractors.JCryptEx;
-
 public class ReverseCrypt {
 
 	public static void main(String[] args) throws Exception {
-
 		Options options = new Options();
 		options.addOption("i", "input", true, "The crypted input file to use");
 		options.addOption("o", "output", true, "The decrypted output file");
@@ -51,7 +47,7 @@ public class ReverseCrypt {
 			}
 			existing.renameTo(newName);
 		}
-		Class ex = null;
+		Class<?> ex = null;
 		try {
 			ex = Class.forName(line.getOptionValue("ex"));
 		} catch (ClassNotFoundException e) {
