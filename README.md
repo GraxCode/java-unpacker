@@ -5,6 +5,7 @@ The ReverseCrypter can extract jar archives crypted by various java-crypters. Th
 | Crypter | Extractor |
 | --- | --- |
 | CoreProtect by xmcgamer0x | CoreProtectEx |
+| XMC2 (Old CorePt.) by xmcgamer0x | XMC2Ex |
 | JCrypt 1.5 by redpois0n | JCryptEx |
 | JarProtector 1.1.1 by Burn3diC3 | JarProtectorEx |
 
